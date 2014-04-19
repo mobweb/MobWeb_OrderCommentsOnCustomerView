@@ -2,7 +2,7 @@
 <layout>
     <adminhtml_customer_edit>
         <reference name="customer_edit_tab_view">
-            <block type="ordercommentsoncustomerview/customer_edit_tab_view_comments" name="comments" template="customer/tab/view/comments.phtml" before="-" />
+            <block type="ordercommentsoncustomerview/customer_edit_tab_view_comments" name="comments" template="customer/tab/view/comments.phtml" />
         </reference>
         <reference name="customer_edit_tabs">
             <action method="addTab">
