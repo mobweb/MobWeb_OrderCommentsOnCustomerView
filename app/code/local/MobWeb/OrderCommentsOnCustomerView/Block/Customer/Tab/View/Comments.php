@@ -18,7 +18,7 @@ class MobWeb_OrderCommentsOnCustomerView_Block_Customer_Tab_View_Comments extend
      */
     public function getTabLabel()
     {
-        return $this->__('Order Comment History');
+        return $this->__('Order Comments');
     }
    /**
      * Retrieve the title used by this tab
@@ -27,7 +27,7 @@ class MobWeb_OrderCommentsOnCustomerView_Block_Customer_Tab_View_Comments extend
      */
     public function getTabTitle()
     {
-        return $this->__('Order Comment History');
+        return $this->__('Order Comments');
     }
    /**
      * Determines whether to display the tab
