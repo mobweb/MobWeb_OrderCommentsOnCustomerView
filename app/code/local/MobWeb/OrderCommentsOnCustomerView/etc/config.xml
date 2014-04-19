@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_OrderCommentsOnCustomerView>
+            <version>0.1.0</version>
+        </MobWeb_OrderCommentsOnCustomerView>
+    </modules>
+    <global>
+        <helpers>
+            <ordercommentsoncustomerview>
+                <class>MobWeb_OrderCommentsOnCustomerView_Helper</class>
+            </ordercommentsoncustomerview>
+        </helpers>
+        <blocks>
+            <ordercommentsoncustomerview>
+                <class>MobWeb_OrderCommentsOnCustomerView_Block</class>
+            </ordercommentsoncustomerview>
+        </blocks>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <ordercommentsoncustomerview>
+                    <file>MobWeb_OrderCommentsOnCustomerView.xml</file>
+                </ordercommentsoncustomerview>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

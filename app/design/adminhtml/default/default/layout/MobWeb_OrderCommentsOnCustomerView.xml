@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_customer_edit>
+        <reference name="customer_edit_tab_view">
+            <block type="ordercommentsoncustomerview/customer_edit_tab_view_comments" name="comments" template="customer/tab/view/comments.phtml" before="-" />
+        </reference>
+        <reference name="customer_edit_tabs">
+            <action method="addTab">
+                <name>order_comment_history</name>
+                <block>ordercommentsoncustomerview/customer_tab_view_comments</block>
+            </action>
+        </reference>
+    </adminhtml_customer_edit>
+</layout>

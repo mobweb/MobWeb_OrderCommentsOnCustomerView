@@ -1,0 +1,34 @@
+<div class="entry-edit">
+    <div class="entry-edit-head"><h4 class="icon-head head-customer-sales-statistics"><?php echo Mage::helper('customer')->__('Order Comments') ?></h4></div>
+    <div class="grid">
+        <table cellspacing="0" class="data">
+            <thead>
+                <tr class="headings">
+                    <th><?php echo Mage::helper('customer')->__('Date') ?></th>
+                    <th><?php echo Mage::helper('customer')->__('Comment') ?></th>
+                    <th><?php echo Mage::helper('customer')->__('Order') ?></th>
+                    <th><?php echo Mage::helper('customer')->__('Order Status') ?></th>
+                </tr>
+            </thead>
+            <?php if($comments = $this->getComments()) { ?>
+            <tbody>
+                <?php $_i = 0; ?>
+                <?php foreach($comments AS $comment) { ?>
+                    <tr<?php echo ($_i++ % 2 ? ' class="even"' : '') ?>>
+                        <td><?php echo $comment['created_at']; ?></td>
+                        <td><?php echo $comment['comment']; ?></td>
+                        <td><?php echo $comment['order']; ?></td>
+                        <td><?php echo $comment['order_status']; ?></td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+            <?php } else { ?>
+                <tbody>
+                    <tr class="no-display"><td colspan="5"></td></tr>
+                </tbody>
+            <?php } ?>
+        </table>
+    </div>
+</div>
+<div class="clear"></div>
+<br/>

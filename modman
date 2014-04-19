@@ -1,0 +1,10 @@
+app/code/local/MobWeb/OrderCommentsOnCustomerView app/code/local/MobWeb/OrderCommentsOnCustomerView/
+
+app/design/adminhtml/default/default/layout/MobWeb_OrderCommentsOnCustomerView.xml app/design/adminhtml/default/default/layout/MobWeb_OrderCommentsOnCustomerView.xml
+
+app/design/adminhtml/default/default/template/customer/tab/view/comments.phtml app/design/adminhtml/default/default/template/customer/tab/view/comments.phtml
+
+app/etc/modules/MobWeb_OrderCommentsOnCustomerView.xml app/etc/modules/MobWeb_OrderCommentsOnCustomerView.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

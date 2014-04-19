@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <customer>
+            <groups>
+                <order_comment_display translate="label">
+                    <label>Order Comment Display</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <!-- Access this field via: Mage::getStoreConfig('customer/order_comment_display/filter_strings') -->
+                        <filter_strings>
+                            <label>Filter Comments By Strings</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Any order comment displaying one of the strings entered above will not be displayed in the Order Comment display. Enter one string per line.]]></comment>
+                        </filter_strings>
+                    </fields>
+                </order_comment_display>
+            </groups>
+        </customer>
+    </sections>
+</config>
